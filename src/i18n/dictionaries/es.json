@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "Jorge Fuentes | Desarrollador de software",
+    "description": "Portafolio de Jorge Fuentes, desarrollador de software: aplicaciones web, móviles y soluciones ERP en la nube."
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "language": "Idioma",
+    "skipToContent": "Saltar al contenido"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "role": "Desarrollador de software",
+    "tagline": "Construyo aplicaciones web y móviles, e integro sistemas ERP en la nube para que los negocios funcionen mejor.",
+    "ctaProjects": "Ver proyectos",
+    "ctaContact": "Contáctame"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "paragraphs": [
+      "Soy desarrollador de software con experiencia construyendo productos de punta a punta: desde el backend y la infraestructura en la nube hasta interfaces web y móviles.",
+      "Me gusta trabajar en lotes pequeños, automatizar lo repetitivo y dejar el código mejor de lo que lo encontré."
+    ],
+    "stackTitle": "Tecnologías con las que trabajo",
+    "photoAlt": "Foto de Jorge Fuentes"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Una selección de cosas que he construido.",
+    "demo": "Ver demo",
+    "code": "Código",
+    "opensInNewTab": "(se abre en una pestaña nueva)"
+  },
+  "contact": {
+    "title": "¿Hablamos?",
+    "text": "Estoy abierto a nuevos proyectos y oportunidades. Escríbeme o encuéntrame en mis redes.",
+    "cta": "Escríbeme"
+  },
+  "footer": {
+    "builtWith": "Hecho con Next.js y Tailwind CSS."
+  }
+}

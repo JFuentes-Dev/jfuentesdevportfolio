@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "Jorge Fuentes | Software Developer",
+    "description": "Portfolio of Jorge Fuentes, software developer: web and mobile apps and cloud ERP solutions."
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "Language",
+    "skipToContent": "Skip to content"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "role": "Software Developer",
+    "tagline": "I build web and mobile apps and integrate cloud ERP systems to help businesses run better.",
+    "ctaProjects": "See projects",
+    "ctaContact": "Get in touch"
+  },
+  "about": {
+    "title": "About me",
+    "paragraphs": [
+      "I'm a software developer with experience building products end to end: from backend and cloud infrastructure to web and mobile interfaces.",
+      "I like working in small batches, automating the repetitive stuff, and leaving code better than I found it."
+    ],
+    "stackTitle": "Technologies I work with",
+    "photoAlt": "Photo of Jorge Fuentes"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of things I've built.",
+    "demo": "Live demo",
+    "code": "Code",
+    "opensInNewTab": "(opens in a new tab)"
+  },
+  "contact": {
+    "title": "Let's talk",
+    "text": "I'm open to new projects and opportunities. Drop me a line or find me on social media.",
+    "cta": "Email me"
+  },
+  "footer": {
+    "builtWith": "Built with Next.js and Tailwind CSS."
+  }
+}
