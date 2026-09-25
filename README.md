@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portafolio
 
-## Getting Started
+Sitio personal de Jorge Fuentes. Next.js 16 (App Router) + TypeScript + Tailwind CSS v4,
+bilingüe (`/es`, `/en`) y 100 % estático. Hosteado en Vercel.
 
-First, run the development server:
+## Desarrollo
+
+Requiere Node ≥ 20.9 (recomendado 22 LTS).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000 → redirige a /es o /en según el navegador
+npm run lint
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Dónde editar el contenido
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Qué | Archivo |
+| --- | --- |
+| Nombre, correo, foto, redes, stack | `src/content/site.ts` |
+| Proyectos | `src/content/projects.ts` (imágenes en `public/projects/`) |
+| Textos de la interfaz (ES / EN) | `src/i18n/dictionaries/es.json` y `en.json` |
+| Colores (claro / oscuro) | tokens en `src/app/globals.css` |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Los dos diccionarios deben tener las mismas claves: TypeScript falla el build si falta una.
 
-## Learn More
+## Estructura
 
-To learn more about Next.js, take a look at the following resources:
+- `src/app/[locale]/`: layout, página y metadata por idioma (hreflang, Open Graph).
+- `src/proxy.ts`: redirige `/` al idioma preferido (`Accept-Language`).
+- `src/app/sitemap.ts`, `robots.ts`, `icon.svg`, `[locale]/opengraph-image.tsx`: SEO.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Conectado a Vercel desde GitHub: cada push a `main` despliega a producción y cada PR genera
+un preview. Con dominio propio, define `NEXT_PUBLIC_SITE_URL` (ej. `https://midominio.cl`) en
+*Vercel → Settings → Environment Variables* para que el sitemap y las URLs canónicas lo usen.
