@@ -20,10 +20,10 @@ export function Hero({ dict }: { dict: Dictionary }) {
         </p>
         <div className="mt-10 flex flex-wrap items-center gap-3">
           <a
-            href="#projects"
+            href="#work"
             className="rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground transition-opacity hover:opacity-90"
           >
-            {dict.hero.ctaProjects}
+            {dict.hero.ctaWork}
           </a>
           <a
             href="#contact"

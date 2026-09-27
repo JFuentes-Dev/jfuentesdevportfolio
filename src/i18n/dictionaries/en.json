@@ -1,41 +1,42 @@
 {
   "meta": {
-    "title": "Jorge Fuentes | Software Developer",
-    "description": "Portfolio of Jorge Fuentes, software developer: web and mobile apps and cloud ERP solutions."
+    "title": "Jorge Fuentes | Software Developer · Odoo",
+    "description": "Portfolio of Jorge Fuentes, Odoo and backend developer based in Chile. Custom modules, REST API integrations and web products, with a passion for games and AI."
   },
   "nav": {
     "about": "About",
-    "projects": "Projects",
+    "work": "Work",
     "contact": "Contact",
     "language": "Language",
     "skipToContent": "Skip to content"
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "role": "Software Developer",
-    "tagline": "I build web and mobile apps and integrate cloud ERP systems to help businesses run better.",
-    "ctaProjects": "See projects",
+    "role": "Software Developer · Odoo",
+    "tagline": "I build custom Odoo modules, integrations and automations, and ship web products end to end. On the side, I make video games and experiment with AI.",
+    "ctaWork": "See my work",
     "ctaContact": "Get in touch"
   },
   "about": {
     "title": "About me",
     "paragraphs": [
-      "I'm a software developer with experience building products end to end: from backend and cloud infrastructure to web and mobile interfaces.",
-      "I like working in small batches, automating the repetitive stuff, and leaving code better than I found it."
+      "I'm an Odoo developer at Sellside, where I build custom Odoo 18 modules with Python, OWL/JavaScript and PostgreSQL, design REST API integrations with other ERPs and automate data synchronization for enterprise clients.",
+      "I hold a Computer Programmer Analyst degree from Duoc UC and I'm currently completing a Computer Engineering degree at the same institution.",
+      "Beyond ERPs, I'm driven by video games and artificial intelligence: I'm building an anime football RPG from scratch in Unity 2D pixel art, and my long-term goal is to start my own game studio."
     ],
     "stackTitle": "Technologies I work with",
     "photoAlt": "Photo of Jorge Fuentes"
   },
-  "projects": {
-    "title": "Projects",
-    "subtitle": "A selection of things I've built.",
-    "demo": "Live demo",
-    "code": "Code",
+  "work": {
+    "title": "Recent work",
+    "subtitle": "Live in production, one click away.",
+    "visit": "Visit website",
+    "code": "View code",
     "opensInNewTab": "(opens in a new tab)"
   },
   "contact": {
     "title": "Let's talk",
-    "text": "I'm open to new projects and opportunities. Drop me a line or find me on social media.",
+    "text": "I'm open to new projects and opportunities, especially in Odoo, backend and game development. Drop me a line.",
     "cta": "Email me"
   },
   "footer": {

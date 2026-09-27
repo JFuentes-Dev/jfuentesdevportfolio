@@ -1,41 +1,42 @@
 {
   "meta": {
-    "title": "Jorge Fuentes | Desarrollador de software",
-    "description": "Portafolio de Jorge Fuentes, desarrollador de software: aplicaciones web, móviles y soluciones ERP en la nube."
+    "title": "Jorge Fuentes | Desarrollador de software · Odoo",
+    "description": "Portafolio de Jorge Fuentes, desarrollador Odoo y backend en Chile. Módulos a medida, integraciones REST API y productos web, con pasión por los videojuegos y la IA."
   },
   "nav": {
     "about": "Sobre mí",
-    "projects": "Proyectos",
+    "work": "Trabajo",
     "contact": "Contacto",
     "language": "Idioma",
     "skipToContent": "Saltar al contenido"
   },
   "hero": {
     "greeting": "Hola, soy",
-    "role": "Desarrollador de software",
-    "tagline": "Construyo aplicaciones web y móviles, e integro sistemas ERP en la nube para que los negocios funcionen mejor.",
-    "ctaProjects": "Ver proyectos",
+    "role": "Desarrollador de software · Odoo",
+    "tagline": "Desarrollo módulos a medida, integraciones y automatizaciones sobre Odoo, y construyo productos web de punta a punta. En paralelo, creo videojuegos y experimento con IA.",
+    "ctaWork": "Ver mi trabajo",
     "ctaContact": "Contáctame"
   },
   "about": {
     "title": "Sobre mí",
     "paragraphs": [
-      "Soy desarrollador de software con experiencia construyendo productos de punta a punta: desde el backend y la infraestructura en la nube hasta interfaces web y móviles.",
-      "Me gusta trabajar en lotes pequeños, automatizar lo repetitivo y dejar el código mejor de lo que lo encontré."
+      "Soy desarrollador Odoo en Sellside, donde construyo módulos personalizados en Odoo 18 con Python, OWL/JavaScript y PostgreSQL, diseño integraciones REST API con otros ERPs y automatizo la sincronización de datos para clientes empresariales.",
+      "Soy Analista Programador Computacional de Duoc UC y hoy curso la continuidad de estudios en Ingeniería en Informática en la misma casa de estudios.",
+      "Fuera del ERP me mueven los videojuegos y la inteligencia artificial: estoy desarrollando desde cero un RPG de fútbol anime en Unity 2D pixel art, y mi meta a largo plazo es formar mi propio estudio de videojuegos."
     ],
     "stackTitle": "Tecnologías con las que trabajo",
     "photoAlt": "Foto de Jorge Fuentes"
   },
-  "projects": {
-    "title": "Proyectos",
-    "subtitle": "Una selección de cosas que he construido.",
-    "demo": "Ver demo",
-    "code": "Código",
+  "work": {
+    "title": "En lo que he trabajado",
+    "subtitle": "Trabajo reciente, en producción y a un clic.",
+    "visit": "Visitar sitio",
+    "code": "Ver código",
     "opensInNewTab": "(se abre en una pestaña nueva)"
   },
   "contact": {
     "title": "¿Hablamos?",
-    "text": "Estoy abierto a nuevos proyectos y oportunidades. Escríbeme o encuéntrame en mis redes.",
+    "text": "Estoy abierto a nuevos proyectos y oportunidades, sobre todo en Odoo, backend y desarrollo de videojuegos. Escríbeme.",
     "cta": "Escríbeme"
   },
   "footer": {

@@ -19,7 +19,7 @@ npm run build
 | Qué | Archivo |
 | --- | --- |
 | Nombre, correo, foto, redes, stack | `src/content/site.ts` |
-| Proyectos | `src/content/projects.ts` (imágenes en `public/projects/`) |
+| Trabajo reciente | `src/content/work.ts` (capturas en `public/work/`) |
 | Textos de la interfaz (ES / EN) | `src/i18n/dictionaries/es.json` y `en.json` |
 | Colores (claro / oscuro) | tokens en `src/app/globals.css` |
 

@@ -7,7 +7,7 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const nav = [
     { href: "#about", label: dict.nav.about },
-    { href: "#projects", label: dict.nav.projects },
+    { href: "#work", label: dict.nav.work },
     { href: "#contact", label: dict.nav.contact },
   ];
 

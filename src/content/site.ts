@@ -7,26 +7,26 @@ export const siteConfig = {
   url:
     process.env.NEXT_PUBLIC_SITE_URL ??
     (vercelUrl ? `https://${vercelUrl}` : "http://localhost:3000"),
-  // TODO: correo personal de contacto (no usar el corporativo). Vacío = se oculta el botón.
-  email: "",
+  email: "j98fuentes@gmail.com",
   // TODO: ruta a tu foto en /public (ej. "/foto.jpg"). Vacío = se muestran las iniciales.
   photo: "",
   links: {
-    // TODO: confirmar usuario de GitHub y agregar LinkedIn. Vacío = se oculta el ícono.
+    // TODO: agregar LinkedIn. Vacío = se oculta el ícono.
     github: "https://github.com/JFuentes-Dev",
     linkedin: "",
   },
-  // TODO: ajustar a tu stack real.
   stack: [
+    "Odoo 18",
+    "Python",
+    "OWL / JavaScript",
+    "PostgreSQL",
+    "REST APIs",
     "TypeScript",
     "React",
     "Next.js",
-    "Node.js",
-    "Python",
-    "Odoo",
-    "Flutter",
-    "Google Cloud",
-    "PostgreSQL",
+    "Tailwind CSS",
+    "Supabase",
+    "Unity",
     "Git",
   ],
 };
