@@ -13,6 +13,9 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath,
+  // Emite /es/index.html en vez de /es.html: GitHub Pages solo resuelve
+  // "/es/" a un index.html dentro de la carpeta, no al archivo plano.
+  trailingSlash: true,
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
