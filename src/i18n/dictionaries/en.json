@@ -38,8 +38,5 @@
     "title": "Let's talk",
     "text": "I'm open to new projects and opportunities, especially in Odoo, backend and game development. Drop me a line.",
     "cta": "Email me"
-  },
-  "footer": {
-    "builtWith": "Built with Next.js and Tailwind CSS."
   }
 }

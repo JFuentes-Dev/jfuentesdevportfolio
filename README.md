@@ -1,7 +1,8 @@
 # Portafolio
 
 Sitio personal de Jorge Fuentes. Next.js 16 (App Router) + TypeScript + Tailwind CSS v4,
-bilingüe (`/es`, `/en`) y 100 % estático. Hosteado en Vercel.
+bilingüe (`/es`, `/en`) y 100 % estático. Hosteado en GitHub Pages:
+https://jfuentes-dev.github.io/portfolio/
 
 ## Desarrollo
 
@@ -28,11 +29,20 @@ Los dos diccionarios deben tener las mismas claves: TypeScript falla el build si
 ## Estructura
 
 - `src/app/[locale]/`: layout, página y metadata por idioma (hreflang, Open Graph).
-- `src/proxy.ts`: redirige `/` al idioma preferido (`Accept-Language`).
+- `src/app/page.tsx`: la raíz `/` redirige a `/es/` (en un sitio estático no hay servidor que
+  detecte el idioma del navegador).
+- `src/proxy.ts`: redirige `/` al idioma preferido (`Accept-Language`), pero solo en `npm run dev`;
+  el export estático lo ignora.
 - `src/app/sitemap.ts`, `robots.ts`, `icon.svg`, `[locale]/opengraph-image.tsx`: SEO.
+- `src/lib/asset.ts`: antepone el `basePath` a las rutas de `/public`. Úsalo en todo `src` de
+  `next/image` o `<img>`.
 
 ## Deploy
 
-Conectado a Vercel desde GitHub: cada push a `main` despliega a producción y cada PR genera
-un preview. Con dominio propio, define `NEXT_PUBLIC_SITE_URL` (ej. `https://midominio.cl`) en
-*Vercel → Settings → Environment Variables* para que el sitemap y las URLs canónicas lo usen.
+`.github/workflows/deploy.yml` compila el sitio (`output: "export"`) y lo publica en GitHub Pages
+en cada push a `main`. Como el repo no se llama `<usuario>.github.io`, el sitio vive bajo
+`/portfolio`: `next.config.ts` calcula ese `basePath` a partir del nombre del repo, y el workflow
+le pasa la URL de Pages en `NEXT_PUBLIC_SITE_URL` para el sitemap y las URLs canónicas.
+
+Para usar un dominio propio: configúralo en *Settings → Pages → Custom domain* y el workflow
+tomará la nueva URL. Si el sitio queda en la raíz del dominio, hay que dejar `basePath` vacío.

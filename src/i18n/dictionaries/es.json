@@ -38,8 +38,5 @@
     "title": "¿Hablamos?",
     "text": "Estoy abierto a nuevos proyectos y oportunidades, sobre todo en Odoo, backend y desarrollo de videojuegos. Escríbeme.",
     "cta": "Escríbeme"
-  },
-  "footer": {
-    "builtWith": "Hecho con Next.js y Tailwind CSS."
   }
 }

@@ -42,12 +42,12 @@ export function WorkCard({ item, locale, dict }: { item: Work; locale: Locale; d
         {/* Hover / foco: descripción + botón */}
         <div
           aria-hidden="true"
-          className="absolute inset-0 flex flex-col items-center justify-center gap-5 bg-stone-950/90 p-6 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100"
+          className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-stone-950/90 px-10 py-6 text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100"
         >
-          <p className="max-w-xs text-base leading-snug font-medium text-pretty sm:text-lg">
+          <p className="max-w-[17rem] text-sm leading-relaxed text-pretty text-stone-200">
             {item.description[locale]}
           </p>
-          <span className="inline-flex items-center gap-1.5 rounded-full border-2 border-teal-400 px-5 py-2 text-sm font-semibold">
+          <span className="inline-flex items-center gap-1.5 rounded-full border-2 border-teal-400 px-4 py-1.5 text-xs font-semibold">
             {cta}
             <svg viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth={2.5}>
               <path d="m9 6 6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />

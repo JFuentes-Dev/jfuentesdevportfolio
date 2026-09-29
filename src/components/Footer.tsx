@@ -25,11 +25,10 @@ export function Footer({ dict }: { dict: Dictionary }) {
         </div>
       </div>
       <div className="border-t border-border/60">
-        <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-2 px-4 py-6 text-sm text-muted sm:flex-row sm:px-6">
+        <div className="mx-auto max-w-5xl px-4 py-6 text-center text-sm text-muted sm:px-6">
           <p>
             © {new Date().getFullYear()} {siteConfig.name}
           </p>
-          <p>{dict.footer.builtWith}</p>
         </div>
       </div>
     </footer>

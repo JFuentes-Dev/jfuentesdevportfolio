@@ -58,16 +58,15 @@ export const work: Work[] = [
   {
     slug: "portfolio",
     name: "Portafolio",
-    // TODO: si el repo queda privado, cambia a la URL del sitio y linkType "site".
-    url: "https://github.com/JFuentes-Dev/portafolio",
+    url: "https://github.com/JFuentes-Dev/portfolio",
     linkType: "code",
     role: { es: "Este sitio", en: "This site" },
     period: { es: "2026", en: "2026" },
     description: {
-      es: "Sitio bilingüe y estático, con SEO por idioma, modo oscuro y deploy continuo en Vercel.",
-      en: "Bilingual static site with per-locale SEO, dark mode and continuous deployment on Vercel.",
+      es: "Sitio bilingüe y estático, con SEO por idioma, modo oscuro y deploy continuo en GitHub Pages.",
+      en: "Bilingual static site with per-locale SEO, dark mode and continuous deployment on GitHub Pages.",
     },
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "GitHub Pages"],
     image: "/work/portafolio.png",
     theme: { bg: "#134e4a", blend: "screen" },
   },
