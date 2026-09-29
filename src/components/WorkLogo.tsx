@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Archivo_Black } from "next/font/google";
 import type { WorkLogo as WorkLogoName } from "@/content/work";
+import { asset } from "@/lib/asset";
 
 const archivo = Archivo_Black({ weight: "400", subsets: ["latin"] });
 
@@ -37,7 +38,7 @@ function SellsideLogo() {
   return (
     <div className="flex items-center gap-3 text-white">
       <span className="grid size-16 place-items-center rounded-2xl bg-white p-2 shadow-lg">
-        <Image src="/work/sellside-mark.png" alt="" width={48} height={48} />
+        <Image src={asset("/work/sellside-mark.png")} alt="" width={48} height={48} />
       </span>
       <span className="text-4xl font-bold tracking-tight">Sellside</span>
     </div>

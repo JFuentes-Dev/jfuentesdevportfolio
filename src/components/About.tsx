@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { siteConfig } from "@/content/site";
+import { asset } from "@/lib/asset";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { Section } from "./Section";
 
@@ -15,7 +16,7 @@ export function About({ dict }: { dict: Dictionary }) {
         <div className="order-first md:order-none">
           {siteConfig.photo ? (
             <Image
-              src={siteConfig.photo}
+              src={asset(siteConfig.photo)}
               alt={dict.about.photoAlt}
               width={224}
               height={224}

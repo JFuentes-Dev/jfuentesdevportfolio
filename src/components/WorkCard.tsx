@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Work } from "@/content/work";
+import { asset } from "@/lib/asset";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { WorkLogo } from "./WorkLogo";
@@ -22,7 +23,7 @@ export function WorkCard({ item, locale, dict }: { item: Work; locale: Locale; d
 
         {/* Captura del sitio teñida con el color de la marca */}
         <Image
-          src={item.image}
+          src={asset(item.image)}
           alt=""
           fill
           sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
